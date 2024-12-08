@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - G Robot</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/x-icon" href=skin/favicon.ico-removebg-preview.png>
+    <link rel="icon" type="image/x-icon" href=skin/favicon.ico-removebg-preview.png>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+
+        p {
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .hero-section {
+            height: 60vh;
+            background: linear-gradient(135deg, #1a1a2e 50%, #3a0ca3 100%);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+        .contact-form-section {
+            padding: 80px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .contact-form-section h2 {
+            text-align: center;
+            color: #3a0ca3;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .form-control {
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .form-select {
+            border-radius: 8px;
+        }
+
+        .submit-button {
+            width: 100%;
+            background-color: #3a0ca3;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .submit-button:hover {
+            transform: scale(1.05);
+            background-color: #ff8cfc;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+             
+            <a style="font-size: 25px;" class="navbar-brand" href="index.html"><img class="logo" src="skin/favicon.ico-removebg-preview.png" alt="">Robot</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="view_product.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/MarLuar?tab=repositories" target="_blank">Repositories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login_page.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </div>
+        </div>
+     </nav>
+
+<!-- Login popup -->
+<div id="login-popup" class="popup hidden">
+    <div class="popup-content">
+        <button class="close-btn" id="close-popup-btn" aria-label="Close Login Popup">
+            &times;
+        </button>
+        <h2 class="popup-title">Welcome Back</h2>
+        <p class="popup-description">Log in to access your account</p>
+        <form id="popup-login-form">
+            <div class="input-group">
+                <label for="popup-email">Email</label>
+                <input type="email" id="popup-email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="popup-password">Password</label>
+                <input type="password" id="popup-password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="popup-btn">Login</button>
+        </form>
+        <p class="signup-prompt">
+            Don't have an account? 
+            <a href="signup_page.html" class="signup-link">Sign up here</a>
+        </p>
+    </div>
+</div> 
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div>
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-4"></div>
+            <div class="circle circle-5"></div>
+            <div class="circle circle-5"></div>
+            <div class="circle circle-5"></div>
+            <div class="circle circle-5"></div>
+        </div>
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Reach out to us for any queries or assistance.</p>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <h2>Get In Touch</h2>
+        <div class="contact-form">
+            <form id="contact-form" action="#" method="POST">
+                <!-- Name -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                </div>
+            
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                </div>
+            
+                <!-- Dropdown for Services -->
+                <div class="mb-3">
+                    <label for="service" class="form-label">Choose a Service</label>
+                    <select id="service" name="service" class="form-select" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="Prototyping">Prototyping</option>
+                        <option value="Arduino Coding">Arduino/ STM32/ ESP8266/ NodeMCU/ ESP32/ Raspberry Pi Coding</option>
+                        <option value="PCB Designing">PCB Designing</option>
+                        <option value="Schematic Diagrams">Schematic Diagrams</option>
+                        <option value="Pseudocoding">Pseudocoding/ Algorithm structuring/ Flowcharting</option>
+                        <option value="2D/3D Design">External Design 2D/ 3D Autodesk Fusion Layout</option>
+                        <option value="IoT">IoT (Internet of Things)</option>
+                        <option value="Blynk Integration">Blynk Integration</option>
+                        <option value="Serial Communications">Serial Communications (UART, RS232, Modbus RS485, CAN Bus, I2C)</option>
+                    </select>
+                </div>
+            
+                <!-- Textarea for Additional Concerns -->
+                <div class="mb-3">
+                    <label for="message" class="form-label">Additional Concerns</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" placeholder="Write your message here"></textarea>
+                </div>
+            
+                <!-- Submit Button -->
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+        
+    </section>
+
+<!-- Footer -->
+<div class="footer">
+    <p class="footer-text">© 2024 G Robot. All Rights Reserved.</p>
+    <p class="footer-text">Follow us on</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/share/p/4ZdNu6s2pLW9ytFT/" target="_blank" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="social-icon" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0zm2.02 4.95h-.72c-.56 0-.67.27-.67.66v.86h1.39l-.18 1.41h-1.21v3.63H7.5V7.88h-.96V6.47h.96v-1c0-1.17.57-1.78 1.78-1.78h.89z"/>
+            </svg>
+        </a>
+        <a href="https://github.com/MarLuar?tab=repositories" target="_blank" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="social-icon" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.67.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82a7.59 7.59 0 0 1 4.01 0c1.53-1.03 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.47 0 1.06-.01 1.92-.01 2.18 0 .21.15.46.55.38A8.001 8.001 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+        </a>
+        <a href="https://discord.com/" target="_blank" aria-label="Discord">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="social-icon" viewBox="0 0 16 16">
+                <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011c-.9-.337-1.708-.754-2.495-1.255a.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.168-.126.335-.254.504-.373a.05.05 0 0 1 .051 0c5.267 3.816 10.84 0 10.86-.003a.05.05 0 0 1 .053 0c.17.12.336.247.504.373a.051.051 0 0 1-.004.085 11.425 11.425 0 0 1-2.496 1.255.051.051 0 0 0-.03.03.052.052 0 0 0 .004.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.493-9.105a.034.034 0 0 0-.02-.019ZM5.497 10.905c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.505 0c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+            </svg>
+        </a>
+    </div>
+</div>
+ <script>
+        // Add event listener to handle form submission
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent actual form submission
+
+        // Get user input values
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const service = document.getElementById('service').value;
+
+        // Ensure all fields are filled
+        if (!name || !email || !service) {
+            alert('Please fill in all required fields.');
+            return;
+        }
+
+        // Notify the user
+        alert(`Thank you, ${name}! Your request for '${service}' has been received. We will contact you at ${email} soon.`);
+        
+        // Optionally, reset the form
+        this.reset();
+    });
+ </script>
+ <script src="JavaScript/cart.js"></script>
+ <script src="JavaScript/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+    font-family: "Anek Bangla", sans-serif;
+    background-color: #1a1a2e;
+    color: #eaeaea;
+}
+
+.hero-banner {
+    background-color: #3a0ca3;
+    padding: 50px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-banner h1 {
+    font-size: 2.5rem;
+    color: #ff8cfc;
+}
+
+.hero-banner p {
+    font-size: 1.rem;
+    margin-top: 10px;
+}
+
+.categories-section {
+    padding: 40px 20px;
+}
+
+.categories-section h2 {
+    color: #ff8cfc;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.category-card {
+    background-color: #312f50;
+    border: 1px solid #4e3f6a;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(255, 140, 252, 0.3);
+}
+
+.category-card img {
+    width: 100px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.category-card h5 {
+    color: #ff8cfc;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.category-card p {
+    color: #c4c4d9;
+}
